@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tts-recorder"
+version = "0.1.0"
+description = "Lightweight Tkinter-based Thai TTS recording tool"
+authors = [{name = "Gerard"}]
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "sounddevice",
+    "numpy",
+    "scipy"
+]
+
+[project.scripts]
+tts-recorder = "tts_recorder:main"
+
