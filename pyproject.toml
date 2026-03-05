@@ -16,6 +16,9 @@ dependencies = [
     "scipy"
 ]
 
+[tool.setuptools]
+py-modules = ["tts_recorder", "core"]
+
 [project.scripts]
 tts-recorder = "tts_recorder:main"
 
